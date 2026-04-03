@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="National_Basketball_Association_logo.svg.ico">
+    <title>BasketBall Score</title>
+</head>
+<body>
+<table border ="2">
+	<tr>
+    	<td> <!-- h1 para el nombre de los equipos -->
+            <h1>Chicago Bulls</h1>
+            <!-- etiqueta <span> para agrupas elementos-->
+           <span id = "homescore">0</span>
+           <!-- botones para agregar el puntaje del marcador-->
+           <button id ="score_1" onclick ="homeaumentar1()">+1</button>
+           <button id ="score_2" onclick ="homeaumentar2()">+2</button>
+           <button id ="score_3" onclick ="homeaumentar3()">+3</button>
+        </td>
+        <td>
+        	<h1>LAKERS</h1>    	
+            <span id = "awayscore">0</span>
+            <button id ="score_1" onclick ="awayaumentar1()">+1</button>
+           <button id ="score_2" onclick ="awayaumentar2()">+2</button>
+           <button id ="score_3" onclick ="awayaumentar3()">+3</button>
+        </td>
+    </tr>
+</table> 
+			<button id="reset_id" onclick="reset()">RESET</button>
+            <script src="score.js"></script>
+    
+</body>
+</html>
